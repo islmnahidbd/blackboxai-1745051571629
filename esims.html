@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LEOGO VISA - Travel eSIMs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f6f6f6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .header {
+      background-color: #f26623;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      flex-wrap: wrap;
+    }
+
+    .header img {
+      height: 50px;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .slider {
+      position: relative;
+      overflow: hidden;
+      height: 300px;
+    }
+
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 12s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0% { margin-left: 0%; }
+      33% { margin-left: 0%; }
+      36% { margin-left: -100%; }
+      66% { margin-left: -100%; }
+      69% { margin-left: -200%; }
+      99% { margin-left: -200%; }
+      100% { margin-left: 0%; }
+    }
+
+    .content {
+      padding: 30px;
+    }
+
+    .content h1 {
+      color: #333;
+      font-size: 24px;
+    }
+
+    .content p {
+      color: #666;
+      font-size: 16px;
+    }
+
+    .countries {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .country-box {
+      width: 30%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .country-box img {
+      width: 50px;
+      height: 30px;
+      object-fit: cover;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .country-box span {
+      display: block;
+      margin-top: 6px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: #f26623;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 25px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .form-section {
+      margin-top: 40px;
+      background-color: #f9f9f9;
+      padding: 25px;
+      border-radius: 8px;
+    }
+
+    .form-section h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    .form-section input,
+    .form-section textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .form-section button {
+      background-color: #f26623;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .footer {
+      background-color: #f26623;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    main h1 {
+      font-size: 24px;
+      color: #111;
+    }
+
+    main p,
+    main li {
+      font-size: 16px;
+      color: #333;
+    }
+
+    main img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+
+    .b2b-box {
+      background: #fff3e8;
+      border: 1px solid #fcd9b6;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .b2b-box h2 {
+      color: #cc5200;
+      margin-bottom: 10px;
+    }
+
+    .b2b-box a {
+      background: #f26623;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      .country-box {
+        width: 45%;
+      }
+
+      .nav-links {
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
+      }
+
+      .nav-links a {
+        margin: 10px;
+        display: inline-block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Header -->
+    <div class="header">
+      <img src="Leogovisa-Profile.jpg" alt="Leogo Visa Logo">
+      <div class="nav-links">
+        <a href="#plans">Plans</a>
+        <a href="#devices">Compatible Devices</a>
+        <a href="#b2b">B2B</a>
+      </div>
+    </div>
+
+    <!-- Slider -->
+    <div class="slider">
+      <div class="slides">
+        <img src="https://yourdomain.com/images/slider1.jpg" alt="Slide 1">
+        <img src="https://yourdomain.com/images/slider2.jpg" alt="Slide 2">
+        <img src="https://yourdomain.com/images/slider3.jpg" alt="Slide 3">
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <h1>🌍 Travel eSIMs – Now Available!</h1>
+      <p>Stay connected across Europe with our hassle-free eSIMs. No roaming fees, no SIM swaps – just instant internet wherever you go.</p>
+
+      <div class="countries">
+        <div class="country-box"><img src="https://flagcdn.com/w40/fi.png"><span>Finland</span></div>
+        <div class="country-box"><img src="https://flagcdn.com/w40/de.png"><span>Germany</span></div>
+        <div class="country-box"><img src="https://flagcdn.com/w40/gb.png"><span>UK</span></div>
+        <div class="country-box"><img src="https://flagcdn.com/w40/no.png"><span>Norway</span></div>
+        <div class="country-box"><img src="https://flagcdn.com/w40/ie.png"><span>Ireland</span></div>
+        <div class="country-box"><img src="https://flagcdn.com/w40/es.png"><span>Spain</span></div>
+      </div>
+
+      <div style="text-align: center;">
+        <a href="https://leogovisa.com" class="cta-button">Buy Your eSIM</a>
+      </div>
+
+      <!-- B2B Section -->
+      <main>
+        <h1 class="text-3xl font-semibold text-gray-900 mb-6">B2B Services</h1>
+        <p class="text-gray-600 text-lg max-w-prose">
+          We offer tailored eSIM solutions for businesses. Partner with us to provide seamless connectivity to your customers and employees.
+        </p>
+
+        <div class="mb-6">
+          <img
+            src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300"
+            alt="Partnership"
+            class="w-full rounded-lg shadow-md object-cover max-h-60"
+            loading="lazy"
+          />
+        </div>
+
+        <ul class="list-disc list-inside mt-4 space-y-2 text-gray-700">
+          <li>Custom eSIM plans for enterprises</li>
+          <li>Bulk purchase discounts</li>
+          <li>Dedicated account management</li>
+          <li>API integration for seamless provisioning</li>
+        </ul>
+
+        <section class="b2b-box">
+          <h2>Travel Agency? Access eSIMs at Exclusive B2B Rates!</h2>
+          <p>
+            Are you a travel agency looking to offer seamless connectivity to your clients? Partner with us and unlock exclusive B2B prices on global eSIMs — perfect for international travelers who need fast, reliable, and hassle-free mobile data.
+          </p>
+          <ul>
+            <li>✅ Wholesale Rates for Travel Agencies</li>
+            <li>✅ Global Coverage in 190+ Countries</li>
+            <li>✅ Instant Delivery – QR or App-based Activation</li>
+            <li>✅ No Physical SIM Needed – 100% Digital</li>
+            <li>✅ Flexible Plans – Daily, Weekly, or Monthly Options</li>
+          </ul>
+          <p>
+            Whether you’re organizing group tours, corporate travel, or personalized getaways, our eSIM solutions enhance your service offering and boost customer satisfaction.
+          </p>
+          <p class="font-semibold">
+            Start earning more while helping your clients stay connected anywhere in the world!
+          </p>
+          <p class="mt-4">
+            <a href="mailto:contact@leogovisa.com">👉 Contact us today for B2B pricing and partnership details.</a>
+          </p>
+        </section>
+      </main>
+
+      <!-- Form -->
+      <div class="form-section" id="contact">
+        <h2>Get in Touch / Request Callback</h2>
+        <form action="https://yourformplugin.com/submit" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <textarea name="message" rows="4" placeholder="Your Message / Query"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        LEOGO VISA | <a href="https://leogovisa.com" style="color:#fff; text-decoration: underline;">leogovisa.com</a> | 📞 +880 1601-536462
+      </p>
+    </footer>
+  </div>
+
+</body>
+</html>
